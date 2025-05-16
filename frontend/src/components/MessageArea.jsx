@@ -78,7 +78,7 @@ function MessageArea() {
               />
             </div>
             <h1 className="text-white font-semibold text-[20px]">
-              {selectedUser?.name || "user"}
+              {selectedUser?.name ||selectedUser?.userName}
             </h1>
           </div>
 
