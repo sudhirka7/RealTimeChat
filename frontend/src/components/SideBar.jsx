@@ -78,7 +78,7 @@ function SideBar() {
         {/* Welcome User */}
         {userData && (
           <div className="flex items-center justify-between w-[80%]">
-            <h1 className="text-gray-600 font-bold text-xl">Hii, {userData.name}</h1>
+            <h1 className="text-gray-600 font-bold text-xl">Hii, {userData.userName}</h1>
             <div className="relative w-[50px] h-[50px] bg-white rounded-full border-4 border-[#20c7ff] shadow-lg overflow-hidden flex justify-center items-center">
               <img
                 src={userData.image || dp}
@@ -162,12 +162,12 @@ function SideBar() {
                 <div className="relative w-[40px] h-[40px] rounded-full border-2 border-[#20c7ff] shadow-lg overflow-hidden flex justify-center items-center mx-[10px]">
                   <img
                     src={user.image || dp}
-                    alt={user.name || "user"}
+                    alt={user.name || user.userName }
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <h1 className="text-[17px] text-gray-800 font-semibold">
-                  {user.name}
+                  {user.name || user.userName}
                 </h1>
               </div>
             ))
